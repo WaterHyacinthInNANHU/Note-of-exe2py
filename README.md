@@ -17,7 +17,7 @@ You can download this python file and save it under the same directory of your e
 
 Then simply type `python archive_viewer.py Clipboard-Translator.exe` in command line, press Enter.
 
-It shows like this. ![image-20200916215439192](C:\Users\86024\AppData\Roaming\Typora\typora-user-images\image-20200916215439192.png)
+It shows like this. ![image-20200916215439192](https://github.com/WaterHyacinthInNANHU/Note-of-exe2py/blob/master/image-20200916215439192.png)
 
 It shows a bunch of .pyc /.pyz files that can be extracted from the executable file. 
 
@@ -31,11 +31,11 @@ You may need to install [HxD](https://mh-nexus.de/en/hxd/) and [python-decompile
 
 Open `hhh.pyc` with [HxD](https://mh-nexus.de/en/hxd/), then copy the first 4 bytes of it.
 
-![image-20200916222238610](C:\Users\86024\AppData\Roaming\Typora\typora-user-images\image-20200916222238610.png)
+![image-20200916222238610](https://github.com/WaterHyacinthInNANHU/Note-of-exe2py/blob/master/image-20200916222238610.png)
 
 That number called Magic numbers, which varies from versions of python, is supposed to appear at the beginning of every .pyc file. Pyinstaller, somehow, removes this number from the .pyc file generated from your source code.
 
-Then you can insert this 4 bytes at the beginning of `start.pyc`. ![image-20200916222852328](C:\Users\86024\AppData\Roaming\Typora\typora-user-images\image-20200916222852328.png)
+Then you can insert this 4 bytes at the beginning of `start.pyc`. ![image-20200916222852328](https://github.com/WaterHyacinthInNANHU/Note-of-exe2py/blob/master/image-20200916222852328.png)
 
 Save the files.
 
